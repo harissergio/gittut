@@ -20,3 +20,9 @@ ggplot(students_df, aes(students_df$absences)) +
   geom_histogram() +
   labs(title = "Histogram for absences of Students") +
   labs(x = "Absences", y = "Count")
+
+# View a histogram of the absences variable
+ggplot(students_df, aes(students_df$absences)) +
+  geom_histogram(fill = "blue") +
+  labs(title = "Histogram for absences of Students") +
+  labs(x = "Absences", y = "Count")
